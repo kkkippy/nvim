@@ -46,5 +46,10 @@ local c = { capabilities = capabilities }
 
 local lsp = require("lspconfig")
 
-lsp.clangd.setup(c)
-lsp.lua_ls.setup(c)
+function load (ls)
+	for _, l in ipairs(ls) do
+		lsp[l].setup(c)
+	end
+end
+
+load({ "clangd", "lua_ls" })
