@@ -39,17 +39,26 @@ cmp.setup.filetype('gitcommit', {
 	})
 })
 
+cmp.setup.cmdline(':', {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = 'path' }
+	}, {
+		{ name = 'cmdline' }
+	})
+})
+
 -- Setup LSP config
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-local c = { capabilities = capabilities }
 
 local lsp = require("lspconfig")
 
 function load (ls)
 	for _, l in ipairs(ls) do
-		lsp[l].setup(c)
+		lsp[l].setup({
+			capabilities = capabilities
+		})
 	end
 end
 
-load({ "clangd", "lua_ls" })
+load({ "clangd", "lua_ls", "csharp_ls" })
