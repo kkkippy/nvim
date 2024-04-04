@@ -3,6 +3,8 @@ local Plug = vim.fn["plug#"]
 
 vim.call "plug#begin"
 
+Plug "andweeb/presence.nvim"
+
 Plug "neoclide/coc.nvim"
 
 Plug "neovim/nvim-lspconfig"
@@ -23,8 +25,5 @@ Plug "vim-airline/vim-airline"
 Plug "vim-airline/vim-airline-themes"
 
 vim.call "plug#end"
-
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
 
 require "autoload"

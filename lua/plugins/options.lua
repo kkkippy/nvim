@@ -1,5 +1,7 @@
 local vim = vim
 
+vim.opt_local.wrap = false
+
 vim.opt.relativenumber = true
 
 vim.opt.foldcolumn = "0"
