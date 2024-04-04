@@ -48,7 +48,7 @@ cmp.setup.cmdline(':', {
 	})
 })
 
--- Setup LSP config
+--[[Setup LSP config
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 local lsp = require("lspconfig")
@@ -62,3 +62,4 @@ function load (ls)
 end
 
 load({ "clangd", "lua_ls", "csharp_ls" })
+]]
