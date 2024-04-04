@@ -53,12 +53,14 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 local lsp = require("lspconfig");
 
-function load (ls)
-	for _, l in ipairs(ls) do
-		lsp[l].setup({
-			capabilities = capabilities
-		})
-	end
-end
+lsp.clangd.setup({
+	capabilities = capabilities
+})
 
-load({ "clangd", "lua_ls", "csharp_ls" })
+lsp.lua_ls.setup({
+	capabilities = capabilities
+})
+
+lsp.csharp_ls.setup({
+	capabilities = capabilities
+})
