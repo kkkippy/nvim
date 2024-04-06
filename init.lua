@@ -3,9 +3,7 @@ local Plug = vim.fn["plug#"]
 
 vim.call "plug#begin"
 
---Plug "andweeb/presence.nvim"
-
---Plug "neoclide/coc.nvim"
+Plug "rebelot/kanagawa.nvim"
 
 Plug "neovim/nvim-lspconfig"
 Plug "hrsh7th/cmp-nvim-lsp"

@@ -1,11 +1,9 @@
-local vim = vim
+vim.wo.relativenumber = true;
+vim.wo.number = true;
 
-vim.opt_local.wrap = false
+vim.o.signcolumn = "no"
 
-vim.opt.relativenumber = true
+vim.o.wrap = false;
+vim.o.shiftwidth = 4;
+vim.o.tabstop = vim.o.shiftwidth;
 
-vim.opt.foldcolumn = "0"
-vim.opt.signcolumn = "no"
-
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
