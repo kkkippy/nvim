@@ -44,8 +44,15 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts);
 -- Insert
 -- keymap("i", "jk", "<ESC>", opts); -- Bem inútil na minha opinião
 
+-- Nvim Tree
+keymap("n", "<leader>e", function ()
+	require("nvim-tree.api").tree.toggle({
+		path = "./"
+	})
+end);
+
 -- Telescope
-keymap("n", "<leader>ff", builtin.find_files, {});
+keymap("n", "<leader>ff", builtin.find_files);
 keymap("n", "<leader>fb", function ()
 	require("telescope").extensions.file_browser.file_browser();
 end)
