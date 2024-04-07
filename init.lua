@@ -1,12 +1,17 @@
-local vim = vim
-local Plug = vim.fn["plug#"]
+local vim = vim;
+local Plug = vim.fn["plug#"];
 
 vim.call "plug#begin"
+
+Plug "folke/neodev.nvim"
+
+Plug "nvim-treesitter/nvim-treesitter"
 
 Plug "ryanoasis/vim-devicons"
 
 Plug "nvim-lua/plenary.nvim"
 Plug "nvim-telescope/telescope.nvim"
+Plug "nvim-telescope/telescope-file-browser.nvim"
 
 Plug "rebelot/kanagawa.nvim"
 

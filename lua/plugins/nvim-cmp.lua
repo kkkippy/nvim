@@ -58,7 +58,14 @@ lsp.clangd.setup({
 })
 
 lsp.lua_ls.setup({
-	capabilities = capabilities
+	capabilities = capabilities,
+	settings = {
+		Lua = {
+			completion = {
+				callSnippet = "Replace"
+			}
+		}
+	}
 })
 
 lsp.csharp_ls.setup({

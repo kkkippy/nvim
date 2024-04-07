@@ -46,3 +46,6 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts);
 
 -- Telescope
 keymap("n", "<leader>ff", builtin.find_files, {});
+keymap("n", "<leader>fb", function ()
+	require("telescope").extensions.file_browser.file_browser();
+end)
