@@ -49,25 +49,18 @@ cmp.setup.cmdline(':', {
 })
 
 -- Setup LSP config
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
+local capabilities = require("cmp_nvim_lsp").default_capabilities();
 
 local lsp = require("lspconfig");
 
-lsp.clangd.setup({
-	capabilities = capabilities
-})
+function load (l, opts)
+	if not opts then opts = {} end
 
-lsp.lua_ls.setup({
-	capabilities = capabilities,
-	settings = {
-		Lua = {
-			completion = {
-				callSnippet = "Replace"
-			}
-		}
-	}
-})
+	opts.capabilities = capabilities;
+	lsp[l].setup(opts);
+end
 
-lsp.csharp_ls.setup({
-	capabilities = capabilities
-})
+load("clangd");
+load("lua_ls");
+load("tsserver");
+load("csharp_ls");
