@@ -2,8 +2,6 @@
 Para que você consiga utilizar minha configuração do NeoVim, é importante configurá-lo apropriadamente, desde os
 LSPs aos Plugins que nele utilizo.
 
----
-
 ## Instalação do LSP
 Para realizar a instalação dos LSPs, no qual são responsáveis por permitir o autocompletar e análise do código à medida que se desenvolve, é necessário instalar o [gerenciador de plugins do Vim](https://github.com/junegunn/vim-plug).
 Após isso, abra seu NeoVim (ignore os possíveis erros que aparecerão ao iniciá-lo) e use o comando `:PlugInstall`, isso fará com que todos os plugins que utilizo sejam instalados na sua máquina. Depois de instalar os plugins, será necessário instalar os LSPs.
@@ -22,10 +20,8 @@ Eu pretendo adicionar mais LSPs e tornar minha configuração mais dinâmica e a
 Você pode encontrar os plugins instalados em `~/.local/share/nvim/plugged`.
 
 
-## Tendo problemas na instalação dos LSPs?
+#### Tendo problemas na instalação dos LSPs?
 > Caso você tenha problemas na instalação dos LSPs, procure soluções na internet referente ao seu terminal e/ou gerenciador de pacotes.
-
----
 
 ## E agora?
 
