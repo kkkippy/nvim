@@ -5,8 +5,9 @@ LSPs aos Plugins que nele utilizo.
 ## Instalação do LSP
 Para realizar a instalação dos LSPs, no qual são responsáveis por permitir o autocompletar e análise do código à medida que se desenvolve, é necessário instalar o [gerenciador de plugins do Vim](https://github.com/junegunn/vim-plug).
 
-Após isso, abra seu NeoVim (ignore os possíveis erros que aparecerão ao iniciá-lo) e use o comando `:PlugInstall`, isso fará com que todos os plugins que utilizo sejam instalados na sua máquina. Depois de instalar os plugins, será necessário instalar os LSPs.
-Como estou utilizando Arch Linux e uso somente o C++ (por enquanto), então preciso apenas instalar o `clangd`, da seguinte forma:
+Após isso, abra seu NeoVim (ignore os possíveis erros que aparecerão ao iniciá-lo) e use o comando `:PlugInstall`, isso fará com que todos os plugins que utilizo sejam instalados na sua máquina.
+
+Depois de instalar os plugins, será necessário instalar os LSPs. Como estou utilizando Arch Linux e uso somente o C++ (por enquanto), então preciso apenas instalar o `clangd`, da seguinte forma:
 ```bash
 sudo pacman -S clang
 ```
