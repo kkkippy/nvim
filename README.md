@@ -29,7 +29,6 @@ Você pode encontrar os plugins instalados em `~/.local/share/nvim/plugged`.
 ---
 
 ## E agora?
-
 Após a conclusão de todos os passos, você estará pronto para utilizar seu NeoVim!
 
 Só lembrando: Eu sou iniciante tanto no Linux quanto no NeoVim, ainda tenho muito a aprender. Minha configuração é limitada pois eu utilizo apenas o que é necessário, e eu rejeito o uso de distribuições do NeoVim, pois quero fazer a minha própria configuração.
