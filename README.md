@@ -26,6 +26,8 @@ Você pode encontrar os plugins instalados em `~/.local/share/nvim/plugged`.
 #### Tendo problemas na instalação dos LSPs?
 > Caso você tenha problemas na instalação dos LSPs, procure soluções na internet referente ao seu terminal e/ou gerenciador de pacotes.
 
+---
+
 ## E agora?
 
 Após a conclusão de todos os passos, você estará pronto para utilizar seu NeoVim!
