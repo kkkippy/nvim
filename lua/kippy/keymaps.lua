@@ -45,7 +45,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts);
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts);
 
 -- Open terminal
-keymap("n", "<C-t>", ":terminal<CR>", opts);
+keymap("n", "<leader>t", ":terminal<CR>", opts);
 
 -- Insert
 -- keymap("i", "jk", "<ESC>", opts); -- Bem inútil na minha opinião
