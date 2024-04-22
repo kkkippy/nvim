@@ -64,3 +64,15 @@ load("clangd");
 load("lua_ls");
 load("tsserver");
 load("csharp_ls");
+load("gopls", {
+	settings = {
+		gopls = {
+			experimentalPostfixCompletions = true,
+			analyses = {
+				unusedparams = true,
+				shadow = true,
+			},
+			staticcheck = true,
+		},
+	}
+});

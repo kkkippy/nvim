@@ -1,4 +1,5 @@
 local vim = vim;
+
 local Plug = vim.fn["plug#"];
 
 vim.call "plug#begin"
@@ -13,7 +14,7 @@ Plug "nvim-lua/plenary.nvim"
 Plug "nvim-telescope/telescope.nvim"
 Plug "nvim-telescope/telescope-file-browser.nvim"
 
-Plug "rebelot/kanagawa.nvim"
+Plug "aktersnurra/no-clown-fiesta.nvim"
 
 Plug "neovim/nvim-lspconfig"
 Plug "hrsh7th/cmp-nvim-lsp"
